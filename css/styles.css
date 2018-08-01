@@ -1,0 +1,63 @@
+body {
+  background-image: url(../img/background_2.jpg);
+}
+
+.header {
+  text-align: center;
+}
+
+.profilehead {
+  text-align: center;
+}
+
+#small {
+  visibility: hidden;
+}
+
+.column {
+  text-align: center;
+}
+
+h2 {
+  color: blue;
+}
+
+img {
+  height: 200px;
+}
+
+.pet1 h2 {
+  color: green;
+}
+
+.pet2 h2{
+  color: purple;
+}
+
+.pet3 h2{
+  color: salmon;
+}
+
+@media screen and (min-width: 768px) {
+  .column {
+    float:left;
+    width: 30%;
+    padding: 10px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .pet1 img, .pet2 img, .pet3 img {
+    visibility: hidden;
+  }
+  * {
+    visibility: hidden;
+    background-color: black;
+  }
+  #small {
+    color: white;
+    visibility: visible;
+  }
+
+}
